@@ -14,6 +14,7 @@ import { EstudianteResponseDto } from './dto/estudiante-response.dto';
 import { EstudianteService } from './estudiante.service';
 
 @ApiTags('estudiante')
+@ApiBearerAuth()
 @Controller('estudiante')
 export class EstudianteController {
   constructor(private readonly estudianteService: EstudianteService) {}
